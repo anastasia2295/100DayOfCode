@@ -39,6 +39,10 @@
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 8px;
 }
+#hightlights{
+    padding: 24px;
+    background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+}
 #hero-content a:hover{
     background-color: rgb(255, 238, 0);
 }
@@ -53,4 +57,38 @@ header a{
 header a:hover{
     color: rgb(77, 77, 77);
     background-color: rgb(255, 251, 0);
+}
+#hightlights h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(59, 65, 64);
+    text-transform: uppercase;
+    margin: 24px 0;
+}
+#Destinations{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-content: center;
+    
+}
+.Destinations{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+.Destinations p{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(124, 123, 123);
+    margin: 20px 0;
+}
+.Destinations img{
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    object-fit: cover;
+}
+.Destinations strong{
+    color: rgb(0, 160, 117);
 }
