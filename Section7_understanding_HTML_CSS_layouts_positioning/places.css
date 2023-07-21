@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(40deg, rgb(77,77,77), rgb(58,58,58));
+}
+header{
+    position: static;
+}
+main ul{
+    width: 700px;
+    margin: 0 auto;
+}
+main li{
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    color: rgb(121, 120, 118);
+}
+main li img{
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+}
+.item-content{
+    padding: 24px;
+}
+.accions{
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 0 0 0;
+}
+.accions a{
+      color: rgb(26, 242, 250);
+      text-decoration: none;    
+}
+main a:hover{
+background-color: rgb(212, 249, 255);   
+padding: 8px; 
+box-shadow: 1px 1px 4px rgb(105, 218, 212);
+border-radius: 6px;
+}
