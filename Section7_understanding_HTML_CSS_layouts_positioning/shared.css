@@ -12,6 +12,26 @@ header{
     box-sizing: border-box;
     
 }
+header a{
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+header nav a:hover{
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+}
+#page-logo a{
+    padding: 10px;
+    font-family: "oleo Script", sans-serif;
+    color: rgb(245, 243, 160);
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);}
 ul{
     list-style: none;
     margin: 0;
@@ -24,15 +44,7 @@ header ul{
 header li{
     margin-left: 20px;
 }
-#page-logo a{
-    padding: 10px;
-    font-family: "oleo Script", sans-serif;
-    color: rgb(245, 243, 160);
-    font-size: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-}
+
 footer{
     background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
 }
