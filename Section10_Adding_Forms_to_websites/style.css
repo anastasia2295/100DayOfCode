@@ -1,6 +1,7 @@
 body{
     background-color: rgb(31, 30, 30);
     margin: 8rem;
+    font-family: "Roboto", sans-serif;
 }
 form{
     width: 30rem;
@@ -8,6 +9,9 @@ form{
     background-color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 6px;
+}
+label{
+    margin-bottom: 0.5rem;
 }
 input{
     width: 100%;
@@ -17,4 +21,5 @@ input{
 }
 button{
     display: block;
+    font: inherit;
 }
