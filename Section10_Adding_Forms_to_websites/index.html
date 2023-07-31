@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Section10_Adding_Forms_to_websites/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>HTML forms</title>
 </head>
 <body>
     <form action="../Section10_Adding_Forms_to_websites/index.html" method="GET">
-    <input type="text" name="user-name">
+        <label for="username">Your name</label>
+    <input type="text" name="user-name" id="username">
     <button>Submit</button>
 </form>
 </body>
