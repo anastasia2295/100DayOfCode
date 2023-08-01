@@ -13,6 +13,10 @@
     <form action="../Section10_Adding_Forms_to_websites/index.html" method="GET">
         <label for="username">Your name</label>
     <input type="text" name="user-name" id="username">
+
+<label for="usermessage">Your message</label>
+<textarea id="usermessages" name="user-message"></textarea>
+
     <label for="useremail"> Your email</label>
     <input type="email"  name="user-email" id="useremail">
     <label for="userage"> Your age</label>
@@ -22,6 +26,13 @@
     <label for="birthday"> Your birthday</label>
     <input type="date"  name="user-birthday" id="birthday">
     <hr>
+<label for="favorite-color">Your favorite color</label>
+    <select id="favorite-color" name="favorite-color">
+        <option>Blue</option>
+        <option>Black</option>
+        <option>Red</option>
+    </select>
+
     <h2>How should we verify your account?</h2>
     <div class="form-control-inline"> 
         <input type="radio" name="verify" id="verify-text-message" value="text-message">
@@ -34,7 +45,17 @@
     <div class="form-control-inline"> <input type="radio" name="verify" id="verify-email" value="email">
     <label for="verify-email">Via an email</label>
 </div>
-   
+
+<div class="form-control-inline">
+   <input type="checkbox" id="contact-email" name="contact" value="email">
+<label for="contact-email">Contact me via email</label>
+</div>
+<div class="form-control-inline">
+    <input type="checkbox" id="contact-phone" name="contact" value="phone">
+ <label for="contact-phone">Contact me via phone</label>
+ </div>
+
+
     <button>Submit</button>
 </form>
 </body>
