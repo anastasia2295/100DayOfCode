@@ -20,15 +20,15 @@
             <ul>
                 <li>
                     <label for="username">Your name</label>
-    <input type="text" name="user-name" id="username">
+    <input type="text" name="user-name" id="username" required placeholder="max schwarz">
 </li>
               <li>
                    <label for="useremail"> Your email</label>
-    <input type="email"  name="user-email" id="useremail">
+    <input type="email"  name="user-email" id="useremail" required>
 </li>
                <li>
                    <label for="userpassword"> Your password</label>
-    <input type="password"  name="user-password" id="userpassword"> 
+    <input type="password"  name="user-password" id="userpassword" required minlength="7"> 
                </li>
             </ul>
 </section>
@@ -37,11 +37,11 @@
     <ul>
         <li>
            <label for="userage"> Your age</label>
-    <input type="number" step="1" name="user-age" id="userage"> 
+    <input type="number" step="1" name="user-age" id="userage" required min="18" max="100"> 
         </li>
         <li>
             <label for="birthday"> Your birthday</label>
-    <input type="date"  name="user-birthday" id="birthday">
+    <input type="date"  name="user-birthday" id="birthday" required min="1921-01-01" max="2003-01-01">
         </li>
         <li>
             <label for="favorite-color">Your favorite color</label>
@@ -55,7 +55,7 @@
 </section>
 <section>
     <label for="usermessage">Your message</label>
-<textarea id="usermessages" name="user-message"></textarea>
+<textarea id="usermessages" name="user-message" rows="10"></textarea>
 </section>
    
 <section> 
@@ -88,7 +88,8 @@
 </ul>
 </section>
 <section>
-   <button>Submit</button> 
+    <button type="reset">Clear</button>
+   <button type="submit">Submit</button> 
 </section>
 </form>
 </main>
