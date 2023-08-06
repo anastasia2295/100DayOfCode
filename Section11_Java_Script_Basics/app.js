@@ -17,3 +17,11 @@ alert(adultYears);
 age = 45;
 adultYears = calculateAdultYears(age);
 alert(adultYears);
+
+let person ={
+    name: "Max",
+    greet () {
+       alert("hello!");
+}
+};
+person.greet();
