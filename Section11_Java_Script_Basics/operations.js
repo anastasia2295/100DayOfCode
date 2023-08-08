@@ -7,9 +7,11 @@ console.log(10%6);
 
 console.log((10+4-5)*10);
 
-let result = (10+4-5)*10;
-result = 10 * 4;
+console.log("Max" + " " + "Schwarzmuller");
+console.log("Max" - "ax");
 
-result++; //result = result +1//
-result +=5; //result = recult +5//
-console.log(result);
+let userName = "Max";
+console.log(userName.length)
+
+let hobbies = ["Sports", "Cooking"];
+console.log(hobbies.length);
