@@ -4,3 +4,6 @@
 
 let anchorElement = document.getElementById("external-link");
 anchorElement.href = "https://www.google.com/?hl=ru";
+
+anchorElement = document.querySelector("#external-id");
+anchorElement.href = "https://translate.google.ru/";
