@@ -23,3 +23,7 @@ let firstParagraph = document.querySelector("p");
 
 firstParagraph.append(newAnchorElement);
 
+// удаление элементов
+
+let firstH1Element = document.querySelector("h1");
+firstH1Element.remove();
