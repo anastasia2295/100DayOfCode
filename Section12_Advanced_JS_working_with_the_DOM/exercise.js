@@ -32,3 +32,4 @@ console.dir(paragraph);
 // вы выбрали в (4) и установили любой другой текст по вашему выбору
 
 paragraph.textContent = "This is chellenge";
+
