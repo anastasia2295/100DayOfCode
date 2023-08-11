@@ -23,7 +23,19 @@ let firstParagraph = document.querySelector("p");
 
 firstParagraph.append(newAnchorElement);
 
-// удаление элементов
+// УДАЛЕНИЕ ЭЛЕМЕНТОВ
 
 let firstH1Element = document.querySelector("h1");
 firstH1Element.remove();
+// firstH1Element.parentElement.removeChild(firstH1Element); для старых браузеров
+
+// ПЕРЕМЕЩЕНИЕ ЭЛЕМЕНТОВ
+
+firstParagraph.parentElement.append(firstParagraph);
+// firstParagraph.parentElement.insertBefore().append(firstParagraph)
+
+// INNER HTML
+
+console.log(firstParagraph.innerHTML)
+
+firstParagraph.innerHTML = "Hi! This is <strong>important</strong>"
