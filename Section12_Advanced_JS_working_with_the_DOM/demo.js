@@ -1,7 +1,7 @@
 let productNameInputElement = document.getElementById("product-name");
 let remainingCharsElement = document.getElementById("remaining-chars");
 
-// console.dir(productUserInputElement)
+console.dir(productUserInputElement)
 
 let maxAllowedChars = productNameInputElement.maxLength;
 

@@ -1,14 +1,27 @@
 // 1) Выберите два элемента <button> и сохраните их в двух разных переменных.
 // - Выбрать первую кнопку без добавления или использования какого-либо "id"
 
-
+let buttonRemove = document.body.children[2].children[4];
 
 // - Выберите вторую кнопку, используя "id"
 
-
+let buttonAddBlue = document.getElementById("button-add-blue")
 
 // 2) Добавить прослушиватель события "щелчка" к обеим кнопкам (с двумя разными функциями).
 // Функции должны использовать "console.dir()" для нажатых кнопок.
+
+function clickСountButton2(event){
+let enteredText = event.target.value;
+console.dir(enteredText);
+};
+buttonAddBlue.addEventListener("click", clickСountButton2);
+
+function clickСountButton1(event){
+    let enteredText = event.target.value;
+    console.dir(enteredText);
+    };
+    buttonRemove.addEventListener("click", clickСountButton1);
+
 // - Выводим первую кнопку, используя переменную, в которой она хранится
 // - Вывести вторую кнопку БЕЗ использования переменной, в которой она хранится
 // 3) Теперь выберите и сохраните абзацы, упомянутые в тексте, который вы видите на странице
