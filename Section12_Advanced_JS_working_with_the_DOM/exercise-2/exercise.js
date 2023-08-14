@@ -31,6 +31,20 @@ function clickСountButton1(event){
 // - Если вы боретесь со сверлением DOM, используйте вместо этого "id", но смотрите решение!
 // 4) Измените функции из (2) так, чтобы:
 // - Первая кнопка удаляет третий абзац (то есть <p> перед ним)
+
+function clickСountButton1(event){
+    let removeText = document.getElementById("third-paragraph");
+    removeText.remove("third-paragraph");
+    };
+    buttonRemove.addEventListener("click", clickСountButton1);
+
 // - Вторая кнопка меняет цвет фона первого абзаца на синий
+
+function clickСountButton2(event){
+    let enteredColor = document.getElementById("first-paragraph");
+    enteredColor.classList.add("color-first-paragraph");
+    };
+    buttonAddBlue.addEventListener("click", clickСountButton2);
+
 // 5) Решить (4) как путем изменения "встроенных стилей", так и путем добавления классов CSS
 // Примечание. Сначала вам нужно добавить эти классы в файл styles.css!
