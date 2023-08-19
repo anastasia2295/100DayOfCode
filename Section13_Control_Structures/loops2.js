@@ -15,9 +15,10 @@ const outputResultElement = document.getElementById("calculated-sum");
 outputResultElement.textContent = sumUpToNamber;
 outputResultElement.style.display = "block";
 }
-
-
 calculateSumButtonELement.addEventListener("click", calculateSum)
+
+
+
 
 
 const highlightLinksButtonElement = document.querySelector("#highlight-links button")
@@ -28,7 +29,32 @@ const anchorElements = document.querySelectorAll("#highlight-links a")
 for (const anchorElement of anchorElements) {
 anchorElement.classList.add("highlight")
 }
-
 }
 
 highlightLinksButtonElement.addEventListener("click", highlightLinks)
+
+
+
+
+const dummyUserData = {
+firstName: "Max",
+lastName: "Shworts",
+age: 32
+};
+const displayUserDataButtonElement = document.querySelector("#user-data button")
+
+function dispayUserData() { 
+const outputDataElement = document.getElementById("output-user-data")
+outputDataElement.innerHTML = "";
+
+for (const key in dummyUserData){
+    const newUserDataListElement = document.createElement("li");
+    const outputText = key.toUpperCase() + ": " + dummyUserData[key];
+    newUserDataListElement.textContent = outputText;
+    outputDataElement.append(newUserDataListElement);
+}
+}
+
+displayUserDataButtonElement.addEventListener("click", dispayUserData)
+
+
