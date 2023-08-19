@@ -58,3 +58,29 @@ for (const key in dummyUserData){
 displayUserDataButtonElement.addEventListener("click", dispayUserData)
 
 
+
+
+
+const rollDiceButtonElement = document.querySelector("#statistics button")
+
+function rollDice() {
+
+}
+
+function deriveNumberOfDiceRolls() {
+    const targetNumberInputElement = document.getElementById("user-targer-number")
+    const diceRollsListElement = document.getElementById("dice-rolls")
+    const enteredNumber = targetNumberInputElement.value
+    diceRollsListElement.innerHTML = "";
+
+    let hasRolledTargetNumber = false;
+
+   while (!hasRolledTargetNumber) {
+    const rollNumber = rollDice()
+    if (rollNumber == enteredNumber)
+    hasRolledTargetNumber = true
+   } 
+}
+
+
+rollDiceButtonElement.addEventListener("click", deriveNumberOfDiceRolls)
