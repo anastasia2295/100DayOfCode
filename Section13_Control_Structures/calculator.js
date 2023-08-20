@@ -1,5 +1,5 @@
-const numberElement1 = document.getElementById("user-number1".value)
-const numberElement2 = document.getElementById("user-number2".value)
+const numberElement1 = document.getElementById("user-number1")
+const numberElement2 = document.getElementById("user-number2")
 let resultNumberElement = document.getElementById("result")
 console.dir(document)
 
@@ -8,24 +8,26 @@ const subtractionButton = document.getElementById("subtraction")
 const multiplicationButton = document.getElementById("multiplication")
 const divisionButton = document.getElementById("division")
 
-function calculatedAdd(event){
-
- let resultElement = numberElement1 + numberElement2
-    resultNumberElement.textContent = resultElement
-    console.log(resultElement)
-    
+function calculatedAdd(){
+const enteredNumber1 = numberElement1.value 
+const enteredNumber2 = numberElement2.value 
+ resultNumberElement.textContent = enteredNumber1 + enteredNumber2
+ 
 }
 
 function calculatedSub(){
-    resultNumberElement.textContent = numberElement1 - numberElement2
+    const enteredNumber1 = numberElement1.value 
+const enteredNumber2 = numberElement2.value 
 }
 
 function calculatedMult() {
-
+    const enteredNumber1 = numberElement1.value 
+    const enteredNumber2 = numberElement2.value 
 }
 
 function calculatedDiv () { 
-
+    const enteredNumber1 = numberElement1.value 
+    const enteredNumber2 = numberElement2.value 
 }
 
 additionButton.addEventListener("click", calculatedAdd)
